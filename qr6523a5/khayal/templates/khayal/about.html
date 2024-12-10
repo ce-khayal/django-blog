@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sayt haqqinda</title>
+</head>
+<body>
+    <h2>{%now "Y" %}</h2>
+    <h2>{{list}}</h2>
+    <h2>{{int}}</h2>
+    <h2>{{str}}</h2>
+    <h2>{{tupl}}</h2>
+    <h2>{{ds}}</h2>
+    <div>
+        {%with message='hello'%}
+            <h2>{{ message|add:" Django"}}</h2>
+            <h2>{{ message|capfirst}}</h2>
+        {%endwith%}
+    </div>
+    
+</body>
+</html>
